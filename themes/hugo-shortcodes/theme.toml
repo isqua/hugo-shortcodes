@@ -1,0 +1,12 @@
+name = "Hugo Shortcodes"
+license = "MIT"
+licenselink = "https://github.com/isqua/hugo-shortcodes/blob/main/LICENSE"
+description = "Curated Hugo Shortcodes Collection"
+homepage = "https://isqua.github.io/hugo-shortcodes/"
+tags = ["shortcodes"]
+features = ["shortcodes"]
+min_version = "0.41.0"
+
+[author]
+  name = "isqua"
+  homepage = "https://github.com/isqua"
