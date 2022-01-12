@@ -1,0 +1,3 @@
+baseURL = 'https://isqua.github.io/hugo-shortcodes/'
+languageCode = 'en-us'
+title = 'Curated Hugo Shortcodes Collection'
