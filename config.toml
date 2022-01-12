@@ -1,3 +1,8 @@
 baseURL = 'https://isqua.github.io/hugo-shortcodes/'
 languageCode = 'en-us'
 title = 'Curated Hugo Shortcodes Collection'
+
+theme = 'hugo-book'
+[params]
+    BookSection = '*'
+    BookComments = false
