@@ -6,3 +6,6 @@ theme = [ 'hugo-book', 'hugo-shortcodes' ]
 [params]
     BookSection = '*'
     BookComments = false
+    BookRepo = 'https://github.com/isqua/hugo-shortcodes'
+    BookCommitPath = 'commit'
+    BookEditPath = 'edit/main'
