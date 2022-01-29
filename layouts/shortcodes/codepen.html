@@ -1,0 +1,20 @@
+{{/* This is a shortcode from https://github.com/isqua/hugo-shortcodes */}}
+{{/* If you have any problems, check the latest version in this repository */}}
+
+{{- $id := .Get "id" -}}
+{{- $author := .Get "author" -}}
+{{- $caption := .Get "caption" -}}
+{{- $title := .Get "title" | default $caption | default $id -}}
+{{- $height := .Get "height" | default "300" -}}
+{{- $theme := .Get "theme" | default "default" -}}
+{{- $tab := .Get "tab" | default "result" -}}
+{{- $style := .Get "style" | default "height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" -}}
+
+<figure>
+    <p class="codepen" data-height="{{ $height }}" data-theme-id="{{ $theme }}" data-default-tab="{{ $tab }}" data-slug-hash="{{ $id }}" data-user="{{ $author }}" style="{{ $style }}">
+        <span>See the Pen <a href="https://codepen.io/{{ $author }}/pen/{{ $id }}">{{ $title }}</a> by (<a href="https://codepen.io/{{ $author }}">@{{ $author }}</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    {{ with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>

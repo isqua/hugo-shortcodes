@@ -1,0 +1,17 @@
+{{/* This is a shortcode from https://github.com/isqua/hugo-shortcodes */}}
+{{/* If you have any problems, check the latest version in this repository */}}
+
+{{- $owner := .Get "owner" -}}
+{{- $repo := .Get "repo" -}}
+{{- $branch := .Get "branch" | default "main" -}}
+{{- $refcode := .Get "refcode" -}}
+{{- $url := printf "https://cloud.digitalocean.com/apps/new?repo=https://github.com/%s/%s/tree/%s&refcode=%s" $owner $repo $branch $refcode }}
+
+{{- $theme := .Get "theme" | default "blue" -}}
+{{- $image := printf "https://www.deploytodo.com/do-btn-%s.svg" $theme }}
+
+{{- $alt := .Get "alt" | default "Deploy to Digital Ocean" -}}
+
+<a href="{{ $url | safeURL }}" target="_blank">
+    <img src="{{ $image | safeURL }}" alt="{{ $alt }}">
+</a>

@@ -1,0 +1,40 @@
+{{/* This is a shortcode from https://github.com/isqua/hugo-shortcodes */}}
+{{/* If you have any problems, check the latest version in this repository */}}
+
+{{- $type := .Get "type" | default "star" -}}
+{{- $owner := .Get "owner" -}}
+{{- $repo := .Get "repo" -}}
+{{- $large := .Get "large" | default false -}}
+{{- $height := 20 -}}
+{{- $width := 150 -}}
+{{- $count := .Get "count" | default true -}}
+
+{{- $url := printf "https://ghbtns.com/github-btn.html?user=%s&repo=%s&type=%s" $owner $repo $type -}}
+
+{{- if $large -}}
+    {{- $url = printf "%s&size=large" $url -}}
+    {{- $height = 30 -}}
+    {{- $width = 170 -}}
+{{- end -}}
+
+{{- if $count -}}
+    {{- $url = printf "%s&count=true" $url -}}
+{{- end -}}
+
+{{- if (eq $type "watch") -}}
+    {{- $url = printf "%s&v=2" $url -}}
+{{- end -}}
+
+{{- if (eq $type "follow") -}}
+    {{- if $large -}}
+        {{- $width = 230 -}}
+    {{- else -}}
+        {{- $width = 170 -}}
+    {{- end -}}
+{{- end -}}
+
+<iframe
+    src="{{ $url | safeURL }}"
+    width="{{ .Get "width" | default $width }}" height="{{ $height }}"
+    frameborder="0" scrolling="0"
+    title="GitHub"></iframe>

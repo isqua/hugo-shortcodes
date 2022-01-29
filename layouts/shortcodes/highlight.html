@@ -1,0 +1,10 @@
+{{/* This is a shortcode from https://github.com/isqua/hugo-shortcodes */}}
+{{/* If you have any problems, check the latest version in this repository */}}
+
+{{- $color := .Get "color" -}}
+{{- $style := "" -}}
+{{- if $color -}}
+    {{- $style = printf "background-color: %s" $color -}}
+{{- end -}}
+
+<mark style="{{ $style }}">{{ .Inner | markdownify }}</mark>
