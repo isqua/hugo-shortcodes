@@ -27,3 +27,10 @@ body {
 .install-shortcode h4 {
     margin: 0 0 1em;
 }
+
+.book-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
