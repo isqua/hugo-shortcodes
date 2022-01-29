@@ -30,3 +30,7 @@ Code:
 | Parameter  | Default | Description |
 | ---------- | ------- | ----------- |
 | inner code | —       | The code to render |
+
+## Installation
+
+{{< install-shortcode name="unsafe-html" >}}

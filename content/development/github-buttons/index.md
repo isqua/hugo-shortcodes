@@ -57,3 +57,7 @@ Code of following button:
 | `large`    | `false` | If true, the button is about 30px height. If false, about 20px. |
 | `count`    | `true`  | Whether to show or not counter |
 | `width`    | every button has its own default width | The width of the button. Perhaps if you see too much empty space on the right of the button, you may set a lower value of width |
+
+## Installation
+
+{{< install-shortcode name="github-button" >}}

@@ -57,3 +57,7 @@ Code:
 | `tab`      | `"result"` | Tab or two which is shown by default. Possible values are: `result`, `html`, `css`, js` or two of them separated by comma, like this: `html,result` |
 | `caption`  | —        | A caption to show under the pen |
 | `title`    | `caption` if specified, otherwise `id` | Pen title to show when the iframe is not loaded yet |
+
+## Installation
+
+{{< install-shortcode name="codepen" >}}

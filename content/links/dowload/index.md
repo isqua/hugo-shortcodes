@@ -27,3 +27,7 @@ Code:
 | `url`      | —       | The URL to download file |
 | `filename` | original filename | The name to save the file. Useful if your file has some weird URL but you want to provide a readable name for users. |
 | inner text | `url` param value | The text to show |
+
+## Installation
+
+{{< install-shortcode name="download" >}}

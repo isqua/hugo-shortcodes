@@ -32,3 +32,7 @@ Highlight {{</* highlight color="lime" >}}absolutely **any** words {{</ highligh
 | ---------- | ------- | ----------- |
 | color      | yellow  | The color to highlight text |
 | inner text | —       | The text (markdown) to highlight |
+
+## Installation
+
+{{< install-shortcode name="highlight" >}}

@@ -1,0 +1,39 @@
+{{- $filename := printf "%s.html" (.Get "name") -}}
+{{- $url := printf "https://raw.githubusercontent.com/isqua/hugo-shortcodes/main/themes/hugo-shortcodes/layouts/shortcodes/%s" $filename -}}
+
+<section class="install-shortcode">
+    <h4>Don’t forget to install shortcode before usage.</h4>
+
+    <details>
+        <summary>Install all shortcodes at once</summary>
+        <p>If you need dozens of them, it’s better to attach this repository as a theme to your website.</p>
+
+        <p>First, add the theme as a git submodule:</p>
+        <pre><code>git submodule add -b theme https://github.com/isqua/hugo-shortcodes.git themes/hugo-shortcodes</code></pre>
+
+        <p>Then add the theme to your <code>config.toml</code>. Most likely you have the following line in your config:</p>
+        <pre><code>theme = 'ananke'</code></pre>
+        <p><em>There may be another theme in place of “ananke”</em>.</p>
+
+        <p>Then surround the theme with square brackets, and appends <code>'hugo-shortcodes'</code> with a comma at the end:</p>
+        <pre><code>theme = [ 'ananke', 'hugo-shortcodes' ]</code></pre>
+
+        <p>That’s it! If your hugo server is running, it is better to restart it to avoid unexpected behavior.</p>
+        <p>Now you can use all the shortcodes on any content page of your site.</p>
+    </details>
+
+    <br>
+
+    <details>
+        <summary>Install only current shortcode</summary>
+        <p>If you need only one shortcode or installing a theme is too complicated, you may get it easier.</p>
+
+        <ul>
+            <li>First, <a href="{{ $url | safeURL }}" download="{{ $filename }}">download shortcode file.</a></li>
+            <li>Put the file into your <code>layouts/shortcodes</code> folder.</li>
+        </ul>
+
+        <p>That’s it! If your hugo server is running, it is better to restart it to avoid unexpected behavior.</p>
+        <p>Now you can use the shortcode on any content page of your site.</p>
+    </details>
+</section>

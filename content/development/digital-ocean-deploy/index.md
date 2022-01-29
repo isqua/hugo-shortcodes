@@ -56,3 +56,7 @@ Code:
 | `theme`    | `"blue"` | One of button theme: `blue`, `blue-ghost`, `white-ghost`, or `white` |
 | `alt`      | `"Deploy to Digital Ocean"` | The text alternative to image for screen readers |
 | `refcode`  | —        | The code of Digital Ocean [referral program](https://docs.digitalocean.com/products/accounts/referrals/).
+
+## Installation
+
+{{< install-shortcode name="deploy-to-do" >}}

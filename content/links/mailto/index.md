@@ -50,3 +50,7 @@ If you have any questions, {{</* mailto
 | `cc`       | —       | The copy recipient’s email. If you need to send copies for multiple emails, add them separated by a comma: `alice@example.org,bob@example.org` |
 | `bcc`      | —       | The hidden copy recipient’s email. The same rules as for `cc` |
 | inner text | `email` field value | The text to show |
+
+## Installation
+
+{{< install-shortcode name="mailto" >}}

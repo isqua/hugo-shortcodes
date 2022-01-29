@@ -34,3 +34,7 @@ Code:
 | ---------- | ------- | ----------- |
 | `number`   | —       | The phone number to call. Consider using an international phone code, because the Internet is worldwide :) |
 | inner text | `number` param value | The text to show |
+
+## Installation
+
+{{< install-shortcode name="tel" >}}
