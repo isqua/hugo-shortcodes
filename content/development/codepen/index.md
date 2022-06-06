@@ -58,6 +58,28 @@ Code:
 | `caption`  | —        | A caption to show under the pen |
 | `title`    | `caption` if specified, otherwise `id` | Pen title to show when the iframe is not loaded yet |
 
+## Site Parameters
+
+You can set defaults in Site Parameters. For `config.toml`:
+
+```toml
+[params.HugoShortcodes.Codepen]
+    Author = 'your_login_on_codepen'
+    Theme = 'light'
+    Height = '300'
+```
+
+For `config.yaml`:
+
+```yaml
+params:
+  HugoShortcodes:
+    Codepen:
+      Author: "isqua"
+      Theme: "light"
+      Height: 300
+```
+
 ## Installation
 
 {{< install-shortcode name="codepen" >}}

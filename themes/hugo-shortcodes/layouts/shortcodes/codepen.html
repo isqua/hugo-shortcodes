@@ -2,11 +2,11 @@
 {{/* If you have any problems, check the latest version in this repository */}}
 
 {{- $id := .Get "id" -}}
-{{- $author := .Get "author" -}}
+{{- $author := .Get "author" | default .Site.Params.HugoShortcodes.Codepen.Author | default "" -}}
 {{- $caption := .Get "caption" -}}
 {{- $title := .Get "title" | default $caption | default $id -}}
-{{- $height := .Get "height" | default "300" -}}
-{{- $theme := .Get "theme" | default "default" -}}
+{{- $height := .Get "height" | default .Site.Params.HugoShortcodes.Codepen.Height | default "300" -}}
+{{- $theme := .Get "theme" | default .Site.Params.HugoShortcodes.Codepen.Theme | default "default" -}}
 {{- $tab := .Get "tab" | default "result" -}}
 {{- $style := .Get "style" | default "height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" -}}
 
