@@ -2,21 +2,21 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Hugo Shortcode for GitHub Buttons #  Add buttons to star, watch, or fork Github repository or to follow/sponsor user.
-The buttons are provided by Unofficial GitHub Buttons.
-Minimal example #  By default it shows a small star button with a stars counter for the repository you specified:
- Code:
-{{< github-button owner=&#34;isqua&#34; repo=&#34;bureau&#34; >}} Full example #  You can set different button types, large size, disable count and set the desired width:">
+<meta name=description content="Hugo Shortcode for Gumroad #  Sell your products with Gumroad buttons and overlays. Read more in Gumroad Help.
+Minimal example #  Here is a simple embedded button for Gumroad good:
+Get on  Code:
+{{< gumroad-button id=&#34;demo&#34; >}}Get on{{</ gumroad-button >}} Full example #  Get with 10% discount on Code:
+{{< gumroad-button id=&#34;demo&#34; affiliate=&#34;12345678&#34; >}}Get with 10% discount on{{</ gumroad-button >}} Parameters #     Parameter Default Description     id — ID of your good.">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="GitHub Buttons">
-<meta property="og:description" content="Hugo Shortcode for GitHub Buttons #  Add buttons to star, watch, or fork Github repository or to follow/sponsor user.
-The buttons are provided by Unofficial GitHub Buttons.
-Minimal example #  By default it shows a small star button with a stars counter for the repository you specified:
- Code:
-{{< github-button owner=&#34;isqua&#34; repo=&#34;bureau&#34; >}} Full example #  You can set different button types, large size, disable count and set the desired width:">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Gumroad">
+<meta property="og:description" content="Hugo Shortcode for Gumroad #  Sell your products with Gumroad buttons and overlays. Read more in Gumroad Help.
+Minimal example #  Here is a simple embedded button for Gumroad good:
+Get on  Code:
+{{< gumroad-button id=&#34;demo&#34; >}}Get on{{</ gumroad-button >}} Full example #  Get with 10% discount on Code:
+{{< gumroad-button id=&#34;demo&#34; affiliate=&#34;12345678&#34; >}}Get with 10% discount on{{</ gumroad-button >}} Parameters #     Parameter Default Description     id — ID of your good.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://isqua.github.io/hugo-shortcodes/development/github-buttons/"><meta property="article:section" content="development">
-<title>GitHub Buttons | Curated Hugo Shortcodes Collection</title>
+<meta property="og:url" content="https://isqua.github.io/hugo-shortcodes/purchases/gumroad-button/"><meta property="article:section" content="purchases">
+<title>Gumroad | Curated Hugo Shortcodes Collection</title>
 <link rel=manifest href=/hugo-shortcodes/manifest.json>
 <link rel=icon href=/hugo-shortcodes/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/hugo-shortcodes/book.min.d70bdb65ccda2b961319db5f7c38031a3ce97bd1b7ffe23c19c5065392e65fc8.css integrity="sha256-1wvbZczaK5YTGdtffDgDGjzpe9G3/+I8GcUGU5LmX8g=" crossorigin=anonymous>
@@ -61,7 +61,7 @@ Minimal example #  By default it shows a small star button with a stars counter 
 <a href=https://isqua.github.io/hugo-shortcodes/development/digital-ocean-deploy/>Digital Ocean Deploy Buttons</a>
 </li>
 <li>
-<a href=https://isqua.github.io/hugo-shortcodes/development/github-buttons/ class=active>GitHub Buttons</a>
+<a href=https://isqua.github.io/hugo-shortcodes/development/github-buttons/>GitHub Buttons</a>
 </li>
 </ul>
 </li>
@@ -86,7 +86,7 @@ Minimal example #  By default it shows a small star button with a stars counter 
 <span>Purchases</span>
 <ul>
 <li>
-<a href=https://isqua.github.io/hugo-shortcodes/purchases/gumroad-button/>Gumroad</a>
+<a href=https://isqua.github.io/hugo-shortcodes/purchases/gumroad-button/ class=active>Gumroad</a>
 </li>
 </ul>
 </li>
@@ -101,7 +101,7 @@ Minimal example #  By default it shows a small star button with a stars counter 
 <label for=menu-control>
 <img src=/hugo-shortcodes/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>GitHub Buttons</strong>
+<strong>Gumroad</strong>
 <label for=toc-control>
 <img src=/hugo-shortcodes/svg/toc.svg class=book-icon alt="Table of Contents">
 </label>
@@ -118,37 +118,27 @@ Minimal example #  By default it shows a small star button with a stars counter 
 </nav>
 </aside>
 </header>
-<article class=markdown><h1 id=hugo-shortcode-for-github-buttons>
-Hugo Shortcode for GitHub Buttons
-<a class=anchor href=#hugo-shortcode-for-github-buttons>#</a>
+<article class=markdown><h1 id=hugo-shortcode-for-gumroad>
+Hugo Shortcode for Gumroad
+<a class=anchor href=#hugo-shortcode-for-gumroad>#</a>
 </h1>
-<p>Add buttons to star, watch, or fork <a href=https://github.com/>Github</a> repository or to follow/sponsor user.</p>
-<p>The buttons are provided by <a href=https://ghbtns.com/>Unofficial GitHub Buttons</a>.</p>
+<p>Sell your products with <a href=https://gumroad.com/>Gumroad</a> buttons and overlays. Read more in <a href=https://help.gumroad.com/article/135-setting-up-the-gumroad-overlay-on-your-website>Gumroad Help</a>.</p>
 <h2 id=minimal-example>
 Minimal example
 <a class=anchor href=#minimal-example>#</a>
 </h2>
-<p>By default it shows a small star button with a stars counter for the repository you specified:</p>
-<iframe src="https://ghbtns.com/github-btn.html?user=isqua&repo=bureau&type=star&count=true" width=150 height=20 frameborder=0 scrolling=0 title=GitHub></iframe>
+<p>Here is a simple embedded button for Gumroad good:</p>
+<a class=gumroad-button href=https://gumroad.com/l/demo>Get on</a>
+<script type=text/javascript src=https://gumroad.com/js/gumroad.js></script>
 <p>Code:</p>
-<pre tabindex=0><code>{{&lt; github-button owner=&quot;isqua&quot; repo=&quot;bureau&quot; &gt;}}
+<pre tabindex=0><code>{{&lt; gumroad-button id=&quot;demo&quot; &gt;}}Get on{{&lt;/ gumroad-button &gt;}}
 </code></pre><h2 id=full-example>
 Full example
 <a class=anchor href=#full-example>#</a>
 </h2>
-<p>You can set different button types, large size, disable count and set the desired width:</p>
-<iframe src="https://ghbtns.com/github-btn.html?user=isqua&repo=bureau&type=watch&size=large&count=true&v=2" width=170 height=30 frameborder=0 scrolling=0 title=GitHub></iframe>
-<p>Code of watch button:</p>
-<pre tabindex=0><code>{{&lt; github-button
-    type=&quot;watch&quot;
-    owner=&quot;isqua&quot;
-    repo=&quot;bureau&quot;
-    large=true width=170
-&gt;}}
-</code></pre><p>Following and sponsorship buttons do not require repo:</p>
-<iframe src="https://ghbtns.com/github-btn.html?user=isqua&repo=&type=follow&size=large&count=true" width=230 height=30 frameborder=0 scrolling=0 title=GitHub></iframe>
-<p>Code of following button:</p>
-<pre tabindex=0><code>{{&lt; github-button type=&quot;follow&quot; owner=&quot;isqua&quot; large=true &gt;}}
+<a class=gumroad-button href=https://gumroad.com/a/12345678/demo>Get with 10% discount on</a>
+<p>Code:</p>
+<pre tabindex=0><code>{{&lt; gumroad-button id=&quot;demo&quot; affiliate=&quot;12345678&quot; &gt;}}Get with 10% discount on{{&lt;/ gumroad-button &gt;}}
 </code></pre><h2 id=parameters>
 Parameters
 <a class=anchor href=#parameters>#</a>
@@ -163,34 +153,19 @@ Parameters
 </thead>
 <tbody>
 <tr>
-<td><code>type</code></td>
-<td><code>"star"</code></td>
-<td>One of: <code>star</code>, <code>watch</code>, <code>fork</code>, <code>follow</code>, <code>sponsor</code></td>
-</tr>
-<tr>
-<td><code>owner</code></td>
+<td><code>id</code></td>
 <td>—</td>
-<td>Username or organization name who owns the repository</td>
+<td>ID of your good. You can get it from the URL of the good on Gumroad</td>
 </tr>
 <tr>
-<td><code>repo</code></td>
+<td><code>affiliate</code></td>
 <td>—</td>
-<td>The repository name</td>
+<td>Code of your affiliate Program</td>
 </tr>
 <tr>
-<td><code>large</code></td>
-<td><code>false</code></td>
-<td>If true, the button is about 30px height. If false, about 20px.</td>
-</tr>
-<tr>
-<td><code>count</code></td>
-<td><code>true</code></td>
-<td>Whether to show or not counter</td>
-</tr>
-<tr>
-<td><code>width</code></td>
-<td>every button has its own default width</td>
-<td>The width of the button. Perhaps if you see too much empty space on the right of the button, you may set a lower value of width</td>
+<td>inner text</td>
+<td>—</td>
+<td>The text to show on the button</td>
 </tr>
 </tbody>
 </table>
@@ -198,16 +173,16 @@ Parameters
 Site Parameters
 <a class=anchor href=#site-parameters>#</a>
 </h2>
-<p>You can set defaults in Site Parameters. For <code>config.toml</code>:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml>[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>HugoShortcodes</span>.<span style=color:#a6e22e>Github</span>]
-    <span style=color:#a6e22e>Owner</span> = <span style=color:#e6db74>&#39;your_github_login_or_org_name&#39;</span>
-    <span style=color:#a6e22e>Repository</span> = <span style=color:#e6db74>&#39;your_repository_name&#39;</span>
+<p>You can set defaults and <a href=https://help.gumroad.com/article/153-setting-up-a-custom-domain>custom domain</a> in Site Parameters. For <code>config.toml</code>:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml>[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>HugoShortcodes</span>.<span style=color:#a6e22e>Gumroad</span>]
+    <span style=color:#a6e22e>Host</span> = <span style=color:#e6db74>&#39;https://your_domain.com&#39;</span>
+    <span style=color:#a6e22e>Affiliate</span> = <span style=color:#e6db74>&#39;123456789&#39;</span>
 </code></pre></div><p>For <code>config.yaml</code>:</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>params</span>:
   <span style=color:#f92672>HugoShortcodes</span>:
-    <span style=color:#f92672>Github</span>:
-      <span style=color:#f92672>Owner</span>: <span style=color:#ae81ff>your_github_login_or_org_name</span>
-      <span style=color:#f92672>Repository</span>: <span style=color:#ae81ff>your_repository_name</span>
+    <span style=color:#f92672>Gumroad</span>:
+      <span style=color:#f92672>Host</span>: <span style=color:#e6db74>&#34;https://your_domain.com&#34;</span>
+      <span style=color:#f92672>Affiliate</span>: <span style=color:#e6db74>&#34;123456789&#34;</span>
 </code></pre></div><h2 id=installation>
 Installation
 <a class=anchor href=#installation>#</a>
@@ -232,7 +207,7 @@ Installation
 <summary>Install only current shortcode</summary>
 <p>If you need only one shortcode or installing a theme is too complicated, you may get it easier.</p>
 <ul>
-<li>First, <a href=https://raw.githubusercontent.com/isqua/hugo-shortcodes/main/themes/hugo-shortcodes/layouts/shortcodes/github-button.html download=github-button.html>download shortcode file.</a></li>
+<li>First, <a href=https://raw.githubusercontent.com/isqua/hugo-shortcodes/main/themes/hugo-shortcodes/layouts/shortcodes/codepen.html download=codepen.html>download shortcode file.</a></li>
 <li>Put the file into your <code>layouts/shortcodes</code> folder.</li>
 </ul>
 <p>That’s it! If your hugo server is running, it is better to restart it to avoid unexpected behavior.</p>
@@ -243,7 +218,7 @@ Installation
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
 <div>
-<a class="flex align-center" href=https://github.com/isqua/hugo-shortcodes/edit/main/content/development/github-buttons/index.md target=_blank rel=noopener>
+<a class="flex align-center" href=https://github.com/isqua/hugo-shortcodes/edit/main/content/purchases/gumroad-button/index.md target=_blank rel=noopener>
 <img src=/hugo-shortcodes/svg/edit.svg class=book-icon alt=Edit>
 <span>Edit this page</span>
 </a>
