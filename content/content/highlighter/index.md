@@ -8,22 +8,22 @@ This shortcode allows you to highlight some text inside a paragraph.
 
 ## Minimal example
 
-Highlight {{< highlight >}}absolutely{{</ highlight >}} any words you want.
+Highlight {{< highlighter >}}absolutely{{</ highlighter >}} any words you want.
 
 Code:
 
 ```
-Highlight {{</* highlight >}}absolutely{{</ highlight */>}} any words you want.
+Highlight {{</* highlighter >}}absolutely{{</ highlighter */>}} any words you want.
 ```
 
 ## Full example
 
-Highlight {{< highlight color="lime" >}}absolutely **any** words {{</ highlight >}} you want.
+Highlight {{< highlighter color="lime" >}}absolutely **any** words {{</ highlighter >}} you want.
 
 Code:
 
 ```
-Highlight {{</* highlight color="lime" >}}absolutely **any** words {{</ highlight */>}} you want.
+Highlight {{</* highlighter color="lime" >}}absolutely **any** words {{</ highlighter */>}} you want.
 ```
 
 ## Parameters
@@ -35,4 +35,4 @@ Highlight {{</* highlight color="lime" >}}absolutely **any** words {{</ highligh
 
 ## Installation
 
-{{< install-shortcode name="highlight" >}}
+{{< install-shortcode name="highlighter" >}}
