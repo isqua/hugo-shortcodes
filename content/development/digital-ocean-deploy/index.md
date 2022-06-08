@@ -57,6 +57,34 @@ Code:
 | `alt`      | `"Deploy to Digital Ocean"` | The text alternative to image for screen readers |
 | `refcode`  | —        | The code of Digital Ocean [referral program](https://docs.digitalocean.com/products/accounts/referrals/).
 
+## Site Parameters
+
+You can set defaults in Site Parameters. For `config.toml`:
+
+```toml
+[params.HugoShortcodes.DigitalOcean]
+    RefCode = 'your_referral_code'
+    BadgeTheme = 'blue'
+[params.HugoShortcodes.Github]
+    Owner = 'your_github_login_or_org_name'
+    Repository = 'your_repository_name'
+    Branch = 'default_branch'
+```
+
+For `config.yaml`:
+
+```yaml
+params:
+  HugoShortcodes:
+    DigitalOcean:
+      RefCode: your_referral_code
+      BadgeTheme: blue
+    Github:
+      Owner: your_github_login_or_org_name
+      Repository: your_repository_name
+      Branch: default_branch
+```
+
 ## Installation
 
 {{< install-shortcode name="deploy-to-do" >}}

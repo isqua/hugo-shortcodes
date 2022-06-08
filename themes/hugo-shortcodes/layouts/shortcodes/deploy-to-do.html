@@ -1,13 +1,13 @@
 {{/* This is a shortcode from https://github.com/isqua/hugo-shortcodes */}}
 {{/* If you have any problems, check the latest version in this repository */}}
 
-{{- $owner := .Get "owner" -}}
-{{- $repo := .Get "repo" -}}
-{{- $branch := .Get "branch" | default "main" -}}
-{{- $refcode := .Get "refcode" -}}
+{{- $owner := .Get "owner" | default .Site.Params.HugoShortcodes.Github.Owner | default "" -}}
+{{- $repo := .Get "repo" | default .Site.Params.HugoShortcodes.Github.Repository | default "" -}}
+{{- $branch := .Get "branch" | default .Site.Params.HugoShortcodes.Github.Branch | default "main" -}}
+{{- $refcode := .Get "refcode" | default .Site.Params.HugoShortcodes.DigitalOcean.RefCode | default "" -}}
 {{- $url := printf "https://cloud.digitalocean.com/apps/new?repo=https://github.com/%s/%s/tree/%s&refcode=%s" $owner $repo $branch $refcode }}
 
-{{- $theme := .Get "theme" | default "blue" -}}
+{{- $theme := .Get "theme" | default .Site.Params.HugoShortcodes.DigitalOcean.BadgeTheme | default "blue" -}}
 {{- $image := printf "https://www.deploytodo.com/do-btn-%s.svg" $theme }}
 
 {{- $alt := .Get "alt" | default "Deploy to Digital Ocean" -}}
