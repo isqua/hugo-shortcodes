@@ -1,0 +1,19 @@
+{{/* This is a shortcode from https://github.com/isqua/hugo-shortcodes */}}
+{{/* If you have any problems, check the latest version in this repository */}}
+
+{{- $id := .Get "id" -}}
+{{- $affiliate := .Get "affiliate" | default .Site.Params.HugoShortcodes.Gumroad.Affiliate | default "" -}}
+{{- $host := default "https://gumroad.com" .Site.Params.HugoShortcodes.Gumroad.Host -}}
+{{- $url := printf "%s/l/%s" $host $id }}
+
+{{- if $affiliate -}}
+    {{- $url = printf "%s/a/%s/%s" $host $affiliate $id }}
+{{- end -}}
+
+<a class="gumroad-button" href="{{ $url }}">{{ .Inner }}</a>
+
+{{/* Only include once */}}
+{{- if not (.Page.Scratch.Get "__hugo_shortcodes_gumroad_js") -}}
+    {{- .Page.Scratch.Set "__hugo_shortcodes_gumroad_js" true }}
+    <script type="text/javascript" src="{{ $host }}/js/gumroad.js"></script>
+{{- end -}}
