@@ -58,6 +58,26 @@ Code of following button:
 | `count`    | `true`  | Whether to show or not counter |
 | `width`    | every button has its own default width | The width of the button. Perhaps if you see too much empty space on the right of the button, you may set a lower value of width |
 
+## Site Parameters
+
+You can set defaults in Site Parameters. For `config.toml`:
+
+```toml
+[params.HugoShortcodes.Github]
+    Owner = 'your_github_login_or_org_name'
+    Repository = 'your_repository_name'
+```
+
+For `config.yaml`:
+
+```yaml
+params:
+  HugoShortcodes:
+    Github:
+      Owner: your_github_login_or_org_name
+      Repository: your_repository_name
+```
+
 ## Installation
 
 {{< install-shortcode name="github-button" >}}
