@@ -19,7 +19,7 @@ Minimal example #  Here is a simple embedded iframe with a pen from Codepen:
 <link rel=icon href=/hugo-shortcodes/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/hugo-shortcodes/book.min.d70bdb65ccda2b961319db5f7c38031a3ce97bd1b7ffe23c19c5065392e65fc8.css integrity="sha256-1wvbZczaK5YTGdtffDgDGjzpe9G3/+I8GcUGU5LmX8g=" crossorigin=anonymous>
 <script defer src=/hugo-shortcodes/flexsearch.min.js></script>
-<script defer src=/hugo-shortcodes/en.search.min.cfb12f337b8e25a1d63e4c7ac14c41f31838984657de4de3e88607fb91ee197c.js integrity="sha256-z7EvM3uOJaHWPkx6wUxB8xg4mEZX3k3j6IYH+5HuGXw=" crossorigin=anonymous></script>
+<script defer src=/hugo-shortcodes/en.search.min.02bd627003f0c23d842fda26f3568b585eaed45798a389b5d8a614ecc14b1a18.js integrity="sha256-Ar1icAPwwj2EL9om81aLWF6u1FeYo4m12KYU7MFLGhg=" crossorigin=anonymous></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -102,6 +102,7 @@ Minimal example #  Here is a simple embedded iframe with a pen from Codepen:
 <li><a href=#minimal-example>Minimal example</a></li>
 <li><a href=#full-example>Full example</a></li>
 <li><a href=#parameters>Parameters</a></li>
+<li><a href=#site-parameters>Site Parameters</a></li>
 <li><a href=#installation>Installation</a></li>
 </ul>
 </nav>
@@ -199,7 +200,23 @@ Parameters
 </tr>
 </tbody>
 </table>
-<h2 id=installation>
+<h2 id=site-parameters>
+Site Parameters
+<a class=anchor href=#site-parameters>#</a>
+</h2>
+<p>You can set defaults in Site Parameters. For <code>config.toml</code>:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml>[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>HugoShortcodes</span>.<span style=color:#a6e22e>Codepen</span>]
+    <span style=color:#a6e22e>Author</span> = <span style=color:#e6db74>&#39;your_login_on_codepen&#39;</span>
+    <span style=color:#a6e22e>Theme</span> = <span style=color:#e6db74>&#39;light&#39;</span>
+    <span style=color:#a6e22e>Height</span> = <span style=color:#e6db74>&#39;300&#39;</span>
+</code></pre></div><p>For <code>config.yaml</code>:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>params</span>:
+  <span style=color:#f92672>HugoShortcodes</span>:
+    <span style=color:#f92672>Codepen</span>:
+      <span style=color:#f92672>Author</span>: <span style=color:#e6db74>&#34;isqua&#34;</span>
+      <span style=color:#f92672>Theme</span>: <span style=color:#e6db74>&#34;light&#34;</span>
+      <span style=color:#f92672>Height</span>: <span style=color:#ae81ff>300</span>
+</code></pre></div><h2 id=installation>
 Installation
 <a class=anchor href=#installation>#</a>
 </h2>
@@ -252,6 +269,7 @@ Installation
 <li><a href=#minimal-example>Minimal example</a></li>
 <li><a href=#full-example>Full example</a></li>
 <li><a href=#parameters>Parameters</a></li>
+<li><a href=#site-parameters>Site Parameters</a></li>
 <li><a href=#installation>Installation</a></li>
 </ul>
 </nav>
