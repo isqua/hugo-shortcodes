@@ -1,0 +1,21 @@
+{{/* This is a shortcode from https://github.com/isqua/hugo-shortcodes */}}
+{{/* If you have any problems, check the latest version in this repository */}}
+
+{{- $slug  := .Get "slug"  | default .Site.Params.HugoShortcodes.BuyMeACoffee.Slug  | default "" -}}
+{{- $text  := .Get "text"  | default .Site.Params.HugoShortcodes.BuyMeACoffee.Text  | default "Buy me a coffee" -}}
+{{- $font  := .Get "font"  | default .Site.Params.HugoShortcodes.BuyMeACoffee.Font  | default "Cookie" -}}
+{{- $emoji := .Get "emoji" | default .Site.Params.HugoShortcodes.BuyMeACoffee.Emoji | default "" -}}
+
+{{- $button_colour  := .Get "button-color" | default .Site.Params.HugoShortcodes.BuyMeACoffee.ButtonColor  | default "ffdd00" -}}
+{{- $font_colour    := .Get "font-color"   | default .Site.Params.HugoShortcodes.BuyMeACoffee.FontColor    | default "000000" -}}
+{{- $coffee_colour  := .Get "coffee-color" | default .Site.Params.HugoShortcodes.BuyMeACoffee.CoffeeColor  | default "ffffff" -}}
+{{- $outline_colour := .Get "cup-color"    | default .Site.Params.HugoShortcodes.BuyMeACoffee.CupColor     | default "000000" -}}
+
+{{- $url := printf "https://www.buymeacoffee.com/%s" $slug }}
+
+{{- $params := slice "slug" $slug "text" $text "emoji" $emoji "font_family" $font "button_colour" $button_colour "font_colour" $font_colour "outline_colour" $outline_colour "coffee_colour" $coffee_colour -}}
+{{- $image := printf "https://img.buymeacoffee.com/button-api/?%s" (querify $params) }}
+
+<a href="{{ $url | safeURL }}">
+    <img src="{{ $image | safeURL }}" alt="{{ $text }}" />
+</a>
