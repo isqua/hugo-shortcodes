@@ -10,7 +10,7 @@
     {{- $url = printf "%s/a/%s/%s" $host $affiliate $id }}
 {{- end -}}
 
-<a class="gumroad-button" href="{{ $url }}">{{ .Inner }}</a>
+<a class="hugo-shortcodes-gumroad-button gumroad-button" href="{{ $url }}">{{ .Inner }}</a>
 
 {{/* Only include once */}}
 {{- if not (.Page.Scratch.Get "__hugo_shortcodes_gumroad_js") -}}

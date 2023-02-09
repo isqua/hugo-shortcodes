@@ -5,4 +5,4 @@
 {{- $text := .Inner | default $number -}}
 {{- $url := printf "tel:%s" $number -}}
 
-<a href="{{ $url | safeURL }}">{{ $text | markdownify }}</a>
+<a class="hugo-shortcodes-tel" href="{{ $url | safeURL }}">{{ $text | markdownify }}</a>

@@ -11,7 +11,7 @@
 {{- $columns := .Get "columns" | default .Site.Params.HugoShortcodes.Asciicast.Columns | default "" -}}
 {{- $rows := .Get "rows" | default .Site.Params.HugoShortcodes.Asciicast.Rows | default "" -}}
 
-<script id="asciicast-{{ $id }}"
+<script class="hugo-shortcodes-asciicast" id="asciicast-{{ $id }}"
     {{ if $startAt }} data-start-at="{{ $startAt }}" {{ end }}
     {{ if $theme }} data-theme="{{ $theme }}" {{ end }}
     {{ if $speed }} data-speed="{{ $speed }}" {{ end }}

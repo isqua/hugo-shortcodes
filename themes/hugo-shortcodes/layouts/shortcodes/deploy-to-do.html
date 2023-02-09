@@ -12,6 +12,6 @@
 
 {{- $alt := .Get "alt" | default "Deploy to Digital Ocean" -}}
 
-<a href="{{ $url | safeURL }}" target="_blank">
+<a class="hugo-shortcodes-deploy-to-do" href="{{ $url | safeURL }}" target="_blank">
     <img src="{{ $image | safeURL }}" alt="{{ $alt }}">
 </a>

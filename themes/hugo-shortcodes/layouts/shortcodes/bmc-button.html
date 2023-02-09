@@ -16,6 +16,6 @@
 {{- $params := slice "slug" $slug "text" $text "emoji" $emoji "font_family" $font "button_colour" $button_colour "font_colour" $font_colour "outline_colour" $outline_colour "coffee_colour" $coffee_colour -}}
 {{- $image := printf "https://img.buymeacoffee.com/button-api/?%s" (querify $params) }}
 
-<a href="{{ $url | safeURL }}">
+<a class="hugo-shortcodes-bmc-button" href="{{ $url | safeURL }}">
     <img src="{{ $image | safeURL }}" alt="{{ $text }}" />
 </a>

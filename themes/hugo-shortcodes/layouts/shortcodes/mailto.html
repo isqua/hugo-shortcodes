@@ -26,4 +26,4 @@
     {{- $url = printf "%s&bcc=%s" $url $bcc -}}
 {{- end -}}
 
-<a href="{{ $url | safeURL }}">{{ $text | markdownify }}</a>
+<a class="hugo-shortcodes-mailto" href="{{ $url | safeURL }}">{{ $text | markdownify }}</a>
