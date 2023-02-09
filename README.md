@@ -3,7 +3,7 @@
 [![Hugo](https://img.shields.io/badge/hugo-0.91-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-This is a curated collection of [Hugo](https://gohugo.io/) [shortcodes](https://gohugo.io/content-management/shortcodes/).
+<img src="./content/cover.png" width="640" alt="The Curated Collection of shortcodes for creators and developers">
 
 ## What are shortcodes
 
