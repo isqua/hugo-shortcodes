@@ -5,4 +5,4 @@
 {{- $filename := .Get "filename" | default "" -}}
 {{- $text := .Inner | default $filename | default $url -}}
 
-<a href="{{ $url | safeURL }}" download="{{ $filename }}">{{ $text | markdownify }}</a>
+<a class="hugo-shortcodes-download" href="{{ $url | safeURL }}" download="{{ $filename }}">{{ $text | markdownify }}</a>

@@ -6,4 +6,4 @@
 
 {{- $url := printf "sms:%s" $number -}}
 
-<a href="{{ $url | safeURL }}">{{ $text | markdownify }}</a>
+<a class="hugo-shortcodes-sms" href="{{ $url | safeURL }}">{{ $text | markdownify }}</a>

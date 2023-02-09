@@ -7,4 +7,4 @@
     {{- $style = printf "background-color: %s" $color -}}
 {{- end -}}
 
-<mark style="{{ $style }}">{{ .Inner | markdownify }}</mark>
+<mark class="hugo-shortcodes-highlighter" style="{{ $style }}">{{ .Inner | markdownify }}</mark>
