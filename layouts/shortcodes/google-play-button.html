@@ -1,0 +1,14 @@
+{{/* This is a shortcode from https://github.com/isqua/hugo-shortcodes */}}
+{{/* If you have any problems, check the latest version in this repository */}}
+
+{{- $app   := .Get "app"   | default .Site.Params.HugoShortcodes.GooglePlay.App | default "" -}}
+{{- $lang  := .Get "lang"  | default .Site.Params.HugoShortcodes.GooglePlay.Lang | default "en" -}}
+{{- $alt   := .Get "alt"   | default .Site.Params.HugoShortcodes.GooglePlay.Alt | default "Get it on Google Play" -}}
+{{- $width := .Get "width" | default .Site.Params.HugoShortcodes.GooglePlay.Width | default "200" -}}
+
+{{- $url := printf "https://play.google.com/store/apps/details?id=%s" $app }}
+{{- $image := printf "https://play.google.com/intl/en_us/badges/static/images/badges/%s_badge_web_generic.png" $lang }}
+
+<a class="hugo-shortcodes-google-play-button" href="{{ $url | safeURL }}" target="_blank">
+    <img width="{{ $width }}px" alt="{{ $alt }}" src="{{ $image | safeURL }}" />
+</a>
