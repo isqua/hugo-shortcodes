@@ -1,0 +1,23 @@
+{{/* This is a shortcode from https://github.com/isqua/hugo-shortcodes */}}
+{{/* If you have any problems, check the latest version in this repository */}}
+
+{{- $id := .Get "id" -}}
+{{- $startAt := .Get "startAt" -}}
+{{- $theme := .Get "theme" | default .Site.Params.HugoShortcodes.Asciicast.Theme | default "" -}}
+{{- $speed := .Get "speed" | default .Site.Params.HugoShortcodes.Asciicast.Speed | default "" -}}
+{{- $loop := .Get "loop" | default .Site.Params.HugoShortcodes.Asciicast.Loop | default "" -}}
+{{- $autoplay := .Get "autoplay" | default .Site.Params.HugoShortcodes.Asciicast.AutoPlay | default "" -}}
+{{- $preload := .Get "preload" | default .Site.Params.HugoShortcodes.Asciicast.Preload | default "" -}}
+{{- $columns := .Get "columns" | default .Site.Params.HugoShortcodes.Asciicast.Columns | default "" -}}
+{{- $rows := .Get "rows" | default .Site.Params.HugoShortcodes.Asciicast.Rows | default "" -}}
+
+<script class="hugo-shortcodes-asciicast" id="asciicast-{{ $id }}"
+    {{ if $startAt }} data-start-at="{{ $startAt }}" {{ end }}
+    {{ if $theme }} data-theme="{{ $theme }}" {{ end }}
+    {{ if $speed }} data-speed="{{ $speed }}" {{ end }}
+    {{ if $loop }} data-loop="{{ $loop }}" {{ end }}
+    {{ if $autoplay }} data-autoplay="{{ $autoplay }}" {{ end }}
+    {{ if $preload }} data-preload="{{ $preload }}" {{ end }}
+    {{ if $columns }} data-cols="{{ $columns }}" {{ end }}
+    {{ if $rows }} data-rows="{{ $rows }}" {{ end }}
+    src="https://asciinema.org/a/{{ $id }}.js" async></script>
