@@ -115,4 +115,4 @@ params:
 
 ## Installation
 
-{{< install-shortcode name="codepen" >}}
+{{< install-shortcode name="bmc-button" >}}
