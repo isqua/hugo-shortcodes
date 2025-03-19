@@ -29,7 +29,7 @@ jobs:
 
       - name: Setup pages
         id: pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v5
 
       - name: Build
         env:
@@ -39,9 +39,9 @@ jobs:
         run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
