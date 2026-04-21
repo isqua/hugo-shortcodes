@@ -6,7 +6,7 @@ title: Get it on Google Play Badge
 
 Allow users to download your Application from Google Play.
 
-*Google Play and the Google Play logo are trademarks of Google LLC.*
+_Google Play and the Google Play logo are trademarks of Google LLC._
 
 ## Minimal example
 
@@ -44,12 +44,12 @@ Code:
 
 ## Parameters
 
-| Parameter  | Default  | Description |
-| ---------- | -------- | ----------- |
-| `app`  | —    | The id of an application in Google Play |
-| `lang` | `en` | The two-letters language code |
-| `alt`  | `Get it on Google Play` | The text alternative to image for screen readers |
-| `width` | `200` | The badge width in pixels |
+| Parameter | Default                 | Description                                      |
+| --------- | ----------------------- | ------------------------------------------------ |
+| `app`     | —                       | The id of an application in Google Play          |
+| `lang`    | `en`                    | The two-letters language code                    |
+| `alt`     | `Get it on Google Play` | The text alternative to image for screen readers |
+| `width`   | `200`                   | The badge width in pixels                        |
 
 ## Site Parameters
 
@@ -77,4 +77,4 @@ params:
 
 ## Installation
 
-{{< install-shortcode name="deploy-to-do" >}}
+{{< install-shortcode name="google-play-button" >}}
